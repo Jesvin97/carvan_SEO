@@ -14,11 +14,11 @@ const TABS = [
 // ─── GMB PROFILE DATA (REAL — Caravan Nest Luxury Home Stay) ─
 const PROFILE_COMPLETENESS = [
   { label: 'Primary Category', detail: 'Home Stay', done: true },
-  { label: 'Additional Categories', detail: 'Not assigned', done: false },
+  { label: 'Additional Categories', detail: 'Assigned', done: true },
   { label: 'Address', detail: 'J complex, Road, SH7, Manjadi, Thiruvalla, Kerala 689105', done: true },
   { label: 'Website', detail: 'caravannestluxuryhomestay.in', done: true },
   { label: 'Phone Number', detail: '+919072032010', done: true },
-  { label: 'Work Hours', detail: 'Not provided', done: false },
+  { label: 'Work Hours', detail: 'Provided', done: true },
   { label: 'Photos', detail: '30 photos uploaded', done: true },
   { label: 'Profile Claimed', detail: 'Business profile is claimed', done: true },
 ]
@@ -216,7 +216,7 @@ function GmbProfile() {
         {/* Ring */}
         <div className="ring-card" style={{ minWidth:'200px' }}>
           <div className="ring-title">Profile Completeness</div>
-          <CircularRing score={58} maxScore={100} size={160} strokeWidth={12} />
+          <CircularRing score={62} maxScore={100} size={160} strokeWidth={12} />
           <div style={{ fontFamily:'var(--font-sans)', fontSize:'12.5px', color:'var(--warning)', textAlign:'center', lineHeight:1.4 }}>
             Your business profile could be better
           </div>
@@ -253,7 +253,7 @@ function GmbProfile() {
       {/* Profile Completeness Checklist */}
       <div className="checklist-card" style={{ marginBottom:'20px' }}>
         <div className="checklist-summary-row">
-          <div className="checklist-pct">58%</div>
+          <div className="checklist-pct">62%</div>
           <div className="checklist-meta">
             <div className="checklist-meta-label">Profile Completeness</div>
             <div className="checklist-incomplete">{incomplete} / {total} Incomplete</div>
@@ -671,7 +671,7 @@ export default function App() {
           </div>
           <div className="header-right">
             <div className="header-date">{dateStr}</div>
-            <div className="header-metrics">DR: 0 · Completion: 58%</div>
+            <div className="header-metrics">DR: 0 · Completion: 62%</div>
           </div>
         </header>
       </div>
